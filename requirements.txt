@@ -1,8 +1,6 @@
-sys
 matplotlib
 pandas
 sklearn
 numpy
-cv2
+opencv-python
 base64
-os
