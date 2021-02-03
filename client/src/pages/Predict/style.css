@@ -1,0 +1,121 @@
+.prediction-display {
+    background-color: #f9f9f9;
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    size: 3em;
+    padding: 1em 0;
+}
+
+.sigCanvas {
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+}
+
+.predict-button {
+    padding: .75em 1.5em;
+    font-size: 1.25em;
+    color: white;
+    background-color: #595cf6;
+    border-radius: 4px;
+    border-color: #595cf6;
+    border-style: none;
+}
+  
+.predict-button:disabled {
+    padding: .75em 1.5em;
+    font-size: 1.25em;
+    color: rgba(0, 0, 0, 0.404);
+    background-color: #cccccccc;
+    border-radius: 4px;
+    border-color: #cccccccc;
+    border-style: none;
+}
+  
+.predict-button:enabled:hover {
+    padding: .75em 1.5em;
+    font-size: 1.25em;
+    color: white;
+    background-color: #4e50d4;
+    border-radius: 4px;
+    border-color: #4e50d4;
+    border-style: none;
+  }
+  
+.predict-button:active {
+    padding: .75em 1.5em;
+    font-size: 1.25em;
+    color: white;
+    background-color: #3a3b9e;
+    border-radius: 4px;
+    border-color: #3a3b9e;
+    border-style: none;
+    outline: none;
+}
+  
+.clear-button {
+    padding: .75em 1.5em;
+    font-size: 1.25em;
+    color: white;
+    background-color: #cccccccc;
+    border-radius: 4px;
+    border-color: #cccccccc;
+    border-style: none;
+}
+  
+.clear-button:enabled {
+    outline: none;
+}
+  
+.clear-button:enabled:hover {
+    padding: .75em 1.5em;
+    font-size: 1.25em;
+    color: white;
+    background-color: #afacaccc;
+    border-radius: 4px;
+    border-color: #afacaccc;
+    border-style: none;
+}
+  
+.clear-button:active {
+    padding: .75em 1.5em;
+    font-size: 1.25em;
+    color: white;
+    background-color: #969393cc;
+    border-radius: 4px;
+    border-color: #969393cc;
+    border-style: none;
+    outline: none;
+}
+
+.loader-prediction {
+    margin: 0 5em;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #595cf6;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+.loader {
+    margin: 0 1em;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #595cf6;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+  
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
