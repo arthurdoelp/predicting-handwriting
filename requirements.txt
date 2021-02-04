@@ -2,4 +2,4 @@ matplotlib
 pandas
 sklearn
 numpy
-opencv-python
+opencv-python-headless
