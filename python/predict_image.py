@@ -8,7 +8,8 @@ import numpy as np
 import cv2
 import os
 
-image = sys.argv[1]
+# image = sys.argv[1]
+image_file_path = './../predictions/2-100.png'
 
 # Load digit database
 digits = datasets.load_digits()
@@ -20,7 +21,7 @@ classifier = svm.SVC(gamma = 0.001)
 classifier.fit(data[:n_samples], digits.target[:n_samples])
 
 # Read image
-image_file_path = os.path.abspath(image)
+# image_file_path = os.path.abspath(image)
 img = cv2.imread(image_file_path)
 img = cv2.bitwise_not(img)
 img = img[:,:,0]
